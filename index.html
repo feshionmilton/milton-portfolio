@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Njomuweh Milton Amadou — Mobile Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">
+        <span class="nav__logo-dot"></span>
+        NMA<span class="nav__logo-accent">.</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="#about" class="nav__link">Story</a></li>
+        <li><a href="#stack" class="nav__link">Stack</a></li>
+        <li><a href="#projects" class="nav__link">Work</a></li>
+        <li><a href="#vision" class="nav__link">Vision</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon theme-toggle__icon--sun">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </span>
+      </button>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about" class="nav__link">Story</a></li>
+        <li><a href="#stack" class="nav__link">Stack</a></li>
+        <li><a href="#projects" class="nav__link">Work</a></li>
+        <li><a href="#vision" class="nav__link">Vision</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-grid"></div>
+    <div class="hero__glow hero__glow--left"></div>
+    <div class="hero__glow hero__glow--right"></div>
+    <div class="hero__inner">
+      <div class="hero__badge fade-in">
+        <span class="hero__badge-dot"></span>
+        Available for Internship &amp; Collaborations
+      </div>
+      <h1 class="hero__name fade-in fade-in--delay-1">
+        Njomuweh<br />
+        <span class="hero__name-highlight">Milton</span> Amadou
+      </h1>
+      <p class="hero__title fade-in fade-in--delay-2">
+        Mobile Developer &amp; Community Problem Solver
+      </p>
+      <p class="hero__pitch fade-in fade-in--delay-3">
+        I rapidly identify community and educational bottlenecks and engineer high-impact mobile solutions.
+        Fueled by relentless determination and real-world grit.
+      </p>
+      <div class="hero__ctas fade-in fade-in--delay-4">
+        <a href="#projects" class="btn btn--primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          View My Journey
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          Get in Touch
+        </a>
+      </div>
+      <div class="hero__scroll-hint fade-in fade-in--delay-4">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+    <div class="hero__phone-mockup fade-in fade-in--delay-3">
+      <div class="phone">
+        <div class="phone__screen">
+          <div class="phone__app-header">
+            <span>My Universal</span>
+            <div class="phone__app-status">
+              <span class="phone__dot phone__dot--live"></span> Live
+            </div>
+          </div>
+          <div class="phone__app-body">
+            <div class="phone__class-card">
+              <p class="phone__class-label">CURRENT CLASS</p>
+              <p class="phone__class-name">Software Engineering</p>
+              <p class="phone__class-time">08:00 — 10:00 AM</p>
+              <div class="phone__progress-bar"><div class="phone__progress-fill"></div></div>
+            </div>
+            <div class="phone__quick-links">
+              <div class="phone__quick-item">
+                <div class="phone__quick-icon">💬</div>
+                <span>Chat</span>
+              </div>
+              <div class="phone__quick-item">
+                <div class="phone__quick-icon">🛒</div>
+                <span>Market</span>
+              </div>
+              <div class="phone__quick-item">
+                <div class="phone__quick-icon">🔔</div>
+                <span>Alerts</span>
+              </div>
+              <div class="phone__quick-item">
+                <div class="phone__quick-icon">📚</div>
+                <span>Courses</span>
+              </div>
+            </div>
+            <div class="phone__notification">
+              <div class="phone__notif-icon">📅</div>
+              <div>
+                <p class="phone__notif-title">Class Reminder</p>
+                <p class="phone__notif-sub">Networks — starts in 15 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TECH STACK ═══════════════════════════ -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <div class="section-label reveal">Core Competencies</div>
+      <h2 class="section-title reveal">The Tech Stack</h2>
+      <p class="section-sub reveal">Tools I wield to bring ideas to life.</p>
+      <div class="stack__grid">
+        <div class="stack__card stack__card--featured reveal">
+          <div class="stack__card-glow"></div>
+          <div class="stack__card-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <path d="M20 4L36 30H4L20 4Z" fill="url(#flutter-grad)" opacity="0.9"/>
+              <path d="M20 16L28 30H12L20 16Z" fill="url(#flutter-grad2)"/>
+              <defs>
+                <linearGradient id="flutter-grad" x1="4" y1="4" x2="36" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#7011E6"/>
+                  <stop offset="1" stop-color="#1E66FF"/>
+                </linearGradient>
+                <linearGradient id="flutter-grad2" x1="12" y1="16" x2="28" y2="30" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#00E5FF"/>
+                  <stop offset="1" stop-color="#1E66FF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="stack__card-content">
+            <div class="stack__card-badge">Primary Framework</div>
+            <h3 class="stack__card-name">Flutter</h3>
+            <p class="stack__card-desc">Cross-platform mobile development with Dart. Building production-grade apps with complex state management and custom UI systems.</p>
+          </div>
+          <div class="stack__card-level">
+            <div class="stack__level-bar">
+              <div class="stack__level-fill" style="--pct: 80%"></div>
+            </div>
+            <span>Advanced</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <div class="stack__card-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="6" fill="url(#html-grad)" opacity="0.15"/>
+              <path d="M6 4l2.5 28L18 35l9.5-3L30 4H6z" fill="none" stroke="var(--accent-teal)" stroke-width="1.5"/>
+              <path d="M10 9h16l-1.5 17L18 28l-6.5-2L10 9z" fill="var(--accent-teal)" opacity="0.2"/>
+              <defs><linearGradient id="html-grad" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#00E5FF"/><stop offset="1" stop-color="#1E66FF"/></linearGradient></defs>
+            </svg>
+          </div>
+          <div class="stack__card-content">
+            <div class="stack__card-badge stack__card-badge--secondary">Core Knowledge</div>
+            <h3 class="stack__card-name">HTML &amp; CSS</h3>
+            <p class="stack__card-desc">Semantic markup and modern CSS including Grid, Flexbox, animations, and responsive design principles.</p>
+          </div>
+          <div class="stack__card-level">
+            <div class="stack__level-bar">
+              <div class="stack__level-fill" style="--pct: 70%"></div>
+            </div>
+            <span>Proficient</span>
+          </div>
+        </div>
+        <div class="stack__card reveal">
+          <div class="stack__card-icon">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <rect width="36" height="36" rx="6" fill="var(--accent-teal)" opacity="0.1"/>
+              <text x="8" y="26" font-family="monospace" font-size="18" fill="var(--accent-teal)" font-weight="bold">C</text>
+            </svg>
+          </div>
+          <div class="stack__card-content">
+            <div class="stack__card-badge stack__card-badge--secondary">Core Knowledge</div>
+            <h3 class="stack__card-name">C Programming</h3>
+            <p class="stack__card-desc">Low-level programming fundamentals, memory management, algorithms, and systems thinking that sharpens every higher-level tool.</p>
+          </div>
+          <div class="stack__card-level">
+            <div class="stack__level-bar">
+              <div class="stack__level-fill" style="--pct: 65%"></div>
+            </div>
+            <span>Intermediate</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ STORY ═══════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">The Journey</div>
+      <h2 class="section-title reveal">Built from the Ground Up</h2>
+      <div class="about__grid">
+        <div class="about__narrative reveal">
+          <div class="about__chapter">
+            <div class="about__chapter-icon">⚡</div>
+            <div>
+              <h3 class="about__chapter-title">The Pause That Didn't Stop Him</h3>
+              <p>In his first year at <strong>Chitechma University</strong>, financial hardship forced Milton to pause his studies — no laptop, no shortcuts. Rather than surrender, he took on the roles of bar attendant and then manager at <strong>Figaro Bar</strong>, independently funding his return: his machine, his clothes, his future. He came back to campus not defeated — but forged. Stronger. Unstoppable.</p>
+            </div>
+          </div>
+          <div class="about__chapter">
+            <div class="about__chapter-icon">🎯</div>
+            <div>
+              <h3 class="about__chapter-title">The Spark — A Bootcamp, A Mentor</h3>
+              <p>Introduced to the world of mobile development through an intensive bootcamp held at <strong>Chitechma University</strong> and <strong>HIBES University</strong>, Milton was mentored by <strong>Mr. Chia Desire</strong> — the renowned developer and visionary founder of <strong>HND Pathfinder</strong>. Flutter clicked. The framework became his weapon of choice, and he never looked back.</p>
+            </div>
+          </div>
+          <div class="about__chapter">
+            <div class="about__chapter-icon">👂</div>
+            <div>
+              <h3 class="about__chapter-title">Listening to Real Problems</h3>
+              <p>Managing a business put Milton in direct contact with community friction — student struggles, local bottlenecks, youth challenges with no digital solutions. Where others saw complaints, he saw <em>product briefs</em>. Every grievance became a feature. Every pain point, a sprint. This is the philosophy embedded into every line of his code.</p>
+            </div>
+          </div>
+          <div class="about__chapter">
+            <div class="about__chapter-icon">🎓</div>
+            <div>
+              <h3 class="about__chapter-title">Where He Is Now</h3>
+              <p>Currently completing his final semester exams for <strong>Level 1 at Chitechma University, Buea</strong>. An internship awaits, followed by HND examinations next year. The arc is clear. The trajectory is steep. The determination is absolute.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about__stats reveal">
+          <div class="about__stat-card">
+            <div class="about__stat-number gradient-text">4+</div>
+            <div class="about__stat-label">Apps Built</div>
+          </div>
+          <div class="about__stat-card">
+            <div class="about__stat-number gradient-text">1</div>
+            <div class="about__stat-label">Scale App in Production</div>
+          </div>
+          <div class="about__stat-card">
+            <div class="about__stat-number gradient-text">∞</div>
+            <div class="about__stat-label">Problems Left to Solve</div>
+          </div>
+          <div class="about__stat-card about__stat-card--quote">
+            <div class="about__quote-mark">"</div>
+            <p class="about__quote-text">Every community complaint is a product brief waiting to be written.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Portfolio</div>
+      <h2 class="section-title reveal">The Work</h2>
+      <p class="section-sub reveal">From concept to shipped. Real problems, real solutions.</p>
+
+      <div class="projects__filter reveal">
+        <button class="filter-btn filter-btn--active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="scale">Scale Applications</button>
+        <button class="filter-btn" data-filter="concept">Concepts</button>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid">
+
+        <!-- PROJECT 1: My Universal -->
+        <div class="project-card project-card--featured" data-category="scale">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder">
+              <!-- Drop your screenshot here: <img src="assets/my-universal.png" alt="My Universal App" /> -->
+              <div class="project-card__media-inner">
+                <div class="project-card__app-preview">
+                  <div class="preview-header">
+                    <div class="preview-dots"><span></span><span></span><span></span></div>
+                    <span class="preview-title">My Universal</span>
+                  </div>
+                  <div class="preview-body">
+                    <div class="preview-item preview-item--active">📅 Live Class Tracker</div>
+                    <div class="preview-item">💬 Encrypted P2P Chat</div>
+                    <div class="preview-item">🛒 Student Marketplace</div>
+                    <div class="preview-item">🔔 Smart Notifications</div>
+                    <div class="preview-item">📞 Video &amp; Voice Notes</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Drop your video here: <video src="assets/my-universal-demo.mp4" controls poster="assets/my-universal-thumb.jpg"></video> -->
+              <div class="project-card__media-actions">
+                <button class="media-btn" onclick="openVideoModal('my-universal')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Play Demo
+                </button>
+              </div>
+            </div>
+            <div class="project-card__badge project-card__badge--scale">Scale Application</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">My Universal</h3>
+            <p class="project-card__sub">University Ecosystem App</p>
+            <p class="project-card__desc">A massive, multi-utility school ecosystem solving critical student-teacher bottlenecks. Fully implemented and deployed.</p>
+            <div class="project-card__features">
+              <span class="feature-tag">Live Class Tracking</span>
+              <span class="feature-tag">P2P Encrypted Chat</span>
+              <span class="feature-tag">Student Marketplace</span>
+              <span class="feature-tag">Custom Notifications</span>
+              <span class="feature-tag">Video &amp; Voice Notes</span>
+              <span class="feature-tag">Yaoundé / Buea TZ</span>
+            </div>
+            <div class="project-card__challenge">
+              <div class="challenge-label">⚙ Engineering Challenge</div>
+              <p>Architected a custom background alarm and synchronization system, allowing users to set class alerts using both built-in audio assets and local device storage — without any third-party scheduling library.</p>
+            </div>
+            <div class="project-card__tech">
+              <span>Flutter</span><span>Dart</span><span>Firebase</span><span>Local Notifications</span>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT 2: current project -->
+<div class="project-card" data-category="scale">
+    <div class="project-card__media">
+        <img src="assets/my-universal.png" alt="My Universal App Grid" style="width:100%; height:100%; object-fit:cover;">
+        
+        <div class="project-card__media-actions">
+            <button class="media-btn" onclick="openVideoModal('my-universal')">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Play Demo Video
+            </button>
+        </div>
+    </div>
+    
+    <div class="project-card__badge project-card__badge--featured" style="background: linear-gradient(135deg, #7011E6, #1E66FF); color: white;">MAIN PROJECT</div>
+    
+    <div class="project-card__body">
+        <h3 class="project-card__title">My Universal</h3>
+        <p class="project-card__sub">Comprehensive University Ecosystem Platform</p>
+        <p class="project-card__desc">
+            A massive, multi-utility school ecosystem designed to eliminate student-teacher coordination bottlenecks. Features dynamic class period scheduling tracking localized to Yaoundé/Buea timezones, a peer-to-peer student marketplace, and a centralized faculty communications portal.
+        </p>
+        <div class="project-card__tech">
+            <span>Flutter</span><span>Dart</span><span>Custom Notification Infrastructure</span>
+        </div>
+    </div>
+</div>
+        <!-- PROJECT 2: Instagram Clone -->
+        <div class="project-card" data-category="concept">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder">
+              <!-- Drop your screenshot here: <img src="assets/instagram-clone.png" alt="Instagram Clone" /> -->
+              <div class="project-card__media-inner project-card__media-inner--instagram">
+                <div class="insta-preview">
+                  <div class="insta-preview__header">
+                    <div class="insta-preview__avatar"></div>
+                    <div>
+                      <div class="insta-preview__username">user_profile</div>
+                      <div class="insta-preview__follow">Follow</div>
+                    </div>
+                  </div>
+                  <div class="insta-preview__grid">
+                    <div class="insta-preview__cell"></div>
+                    <div class="insta-preview__cell insta-preview__cell--2"></div>
+                    <div class="insta-preview__cell insta-preview__cell--3"></div>
+                    <div class="insta-preview__cell insta-preview__cell--4"></div>
+                  </div>
+                  <div class="insta-preview__actions">
+                    <span>❤️</span><span>💬</span><span>🔗</span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__media-actions">
+                <button class="media-btn" onclick="openVideoModal('instagram-clone')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Play Demo
+                </button>
+              </div>
+            </div>
+            <div class="project-card__badge project-card__badge--concept">Concept</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Instagram Clone</h3>
+            <p class="project-card__sub">Advanced UI/UX Reconstruction</p>
+            <p class="project-card__desc">A pixel-perfect UI/UX reconstruction focused on advanced state management and the faithful replication of complex, multi-layered mobile layouts.</p>
+            <div class="project-card__tech">
+              <span>Flutter</span><span>Dart</span><span>State Management</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Movie App -->
+        <div class="project-card" data-category="concept">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder">
+              <!-- Drop your screenshot: <img src="assets/movie-app.png" alt="Movie App" /> -->
+              <div class="project-card__media-inner project-card__media-inner--movie">
+                <div class="movie-preview">
+                  <div class="movie-preview__header">🎬 CineStream</div>
+                  <div class="movie-preview__row">
+                    <div class="movie-preview__poster movie-preview__poster--1"></div>
+                    <div class="movie-preview__poster movie-preview__poster--2"></div>
+                    <div class="movie-preview__poster movie-preview__poster--3"></div>
+                  </div>
+                  <div class="movie-preview__label">Trending Now</div>
+                </div>
+              </div>
+              <div class="project-card__media-actions">
+                <button class="media-btn" onclick="document.getElementById('modalVideo').querySelector('source').src='assets/movie-app.mp4'; document.getElementById('modalVideo').load(); openVideoModal('movie-app');"></button>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Play Demo
+                </button>
+              </div>
+            </div>
+            <div class="project-card__badge project-card__badge--concept">Concept</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Movie Application</h3>
+            <p class="project-card__sub">Media Streaming Interface</p>
+            <p class="project-card__desc">A clean media streaming interface utilizing dynamic asynchronous data fetching and sleek poster grids with smooth scroll animations.</p>
+            <div class="project-card__tech">
+              <span>Flutter</span><span>REST API</span><span>Async/Await</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Currency Converter -->
+        <div class="project-card" data-category="concept">
+          <div class="project-card__media">
+            <div class="project-card__media-placeholder">
+              <!-- Drop your screenshot: <img src="assets/currency-converter.png" alt="Currency Converter" /> -->
+              <div class="project-card__media-inner project-card__media-inner--currency">
+                <div class="currency-preview">
+                  <div class="currency-preview__label">XAF → USD</div>
+                  <div class="currency-preview__amount">650,000</div>
+                  <div class="currency-preview__divider">≈</div>
+                  <div class="currency-preview__result">$1,083.00</div>
+                  <div class="currency-preview__tag">Real-time • Offline Ready</div>
+                </div>
+              </div>
+              <div class="project-card__media-actions">
+                <button class="media-btn" onclick="openVideoModal('currency-converter')">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                  Play Demo
+                </button>
+              </div>
+            </div>
+            <div class="project-card__badge project-card__badge--concept">Concept</div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Currency Converter</h3>
+            <p class="project-card__sub">High-Utility Financial Tool</p>
+            <p class="project-card__desc">A high-utility tool focusing on real-time data calculations and lightweight offline processing — fast, accurate, and dependency-lean.</p>
+            <div class="project-card__tech">
+              <span>Flutter</span><span>Dart</span><span>Offline Logic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ VIDEO MODAL ═══════════════════════════ -->
+  <div class="modal" id="videoModal">
+    <div class="modal__overlay" onclick="closeVideoModal()"></div>
+    <div class="modal__content">
+      <button class="modal__close" onclick="closeVideoModal()">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <h3 class="modal__title" id="modalTitle">Project Demo</h3>
+      <div class="modal__video-container">
+        <!-- Video placeholder – drop your video src in app.js openVideoModal() or directly here -->
+        <video id="modalVideo" controls width="100%">
+          <source src="" type="video/mp4" />
+          <p class="modal__video-placeholder">
+            🎬 Video demo coming soon.<br/>
+            Drop your <code>.mp4</code> file in the <code>assets/</code> folder and update the <code>openVideoModal()</code> function in <code>app.js</code>.
+          </p>
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ VISION ═══════════════════════════ -->
+  <section class="vision" id="vision">
+    <div class="vision__bg-glow"></div>
+    <div class="container">
+      <div class="section-label reveal">What's Next</div>
+      <h2 class="section-title reveal">Trajectory &amp; Vision</h2>
+      <div class="vision__grid">
+        <div class="vision__card reveal">
+          <div class="vision__card-icon">🌍</div>
+          <h3>International Experience</h3>
+          <p>Driven by a hunger for global exposure — to build at scale, collaborate with world-class teams, and bring international best practices back home.</p>
+        </div>
+        <div class="vision__card reveal">
+          <div class="vision__card-icon">🏢</div>
+          <h3>Work with Tech Giants</h3>
+          <p>Targeting engineering roles at companies like <strong>Amazon</strong>, <strong>Meta</strong>, and <strong>WhatsApp</strong> — organizations where impact is measured in millions of users.</p>
+        </div>
+        <div class="vision__card reveal">
+          <div class="vision__card-icon">🚀</div>
+          <h3>Found His Own Tech Enterprise</h3>
+          <p>The ultimate mission: to lead, inspire, and employ the next generation of African innovators. Building a company that makes the continent proud.</p>
+        </div>
+      </div>
+      <div class="vision__cta reveal">
+        <p class="vision__cta-text">Internship-ready. HND exams on the horizon. The grind doesn't stop.</p>
+        <a href="#contact" class="btn btn--primary">Let's Build Something</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT & FOOTER ═══════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left reveal">
+          <h2 class="footer__heading">Let's Connect</h2>
+          <p class="footer__sub">Open to internship opportunities, collaborations, and conversations about building the future.</p>
+        </div>
+        <div class="footer__links reveal">
+          <a href="https://github.com/" target="_blank" rel="noopener" class="footer__link" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer__link" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:njomuweh.milton@email.com" class="footer__link" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 Njomuweh Milton Amadou. Engineered with grit.</span>
+        <span>Buea, Cameroon 🇨🇲</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
